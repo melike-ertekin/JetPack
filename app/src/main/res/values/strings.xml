@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JetPack</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="first_fragment">First</string>
+    <string name="second_fragment">Second</string>
+</resources>
