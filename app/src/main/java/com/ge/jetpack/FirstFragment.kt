@@ -16,6 +16,9 @@ import kotlinx.android.synthetic.main.fragment_first.*
  */
 class FirstFragment : Fragment() {
 
+
+    private var myAge = 4
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,7 +33,7 @@ class FirstFragment : Fragment() {
 
         first_button.setOnClickListener {
 
-        val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment()
+        val action = FirstFragmentDirections.actionFirstFragmentToSecondFragment(myAge)
         Navigation.findNavController(it).navigate(action)
         }
     }
